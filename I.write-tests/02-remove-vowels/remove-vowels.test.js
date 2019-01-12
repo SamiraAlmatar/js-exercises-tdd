@@ -10,4 +10,10 @@ test('remove vowels from word', function () {
     var output = removeVowels(word);
     // Assert
     expect(output).toEqual(expected);
-})
+});
+test('Do not remove Y', function(){
+    var word = 'y';
+    var expected = 'y';
+     output = removeVowels(word);
+     expect(output).toEqual(expected);
+});
